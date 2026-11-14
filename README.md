@@ -2,7 +2,9 @@
 
 Rihai helps prison offices, Undertrial Review Committees and legal-aid teams identify custody thresholds for Section 479 BNSS review, inspect the calculation for every record and prepare a Superintendent's application draft.
 
-**Status:** working local prototype with 158 passing tests, 40 unchanged fictional sample records and an actual AgentFoundry SMART-Code repair pass. The 15 November rule and drafting revisions are recorded below; public deployment is pending. See the [earlier browser acceptance record](docs/BROWSER_QA_20261115.md) and [AgentFoundry usage record](docs/AF_USAGE_20261115.md).
+**Status:** public prototype, submitted to Code for a Billion on 15 November 2026. [Try the live demo](https://smyll.github.io/rihai/) · [Official submission #142](https://github.com/karlmehta/code-for-a-billion/issues/142) · [158-test CI run](https://github.com/smyll/rihai/actions/runs/43630206168).
+
+The prototype includes 40 unchanged fictional sample records and an actual AgentFoundry SMART-Code repair pass. See the [review acceptance record](docs/REVIEW_ACCEPTANCE_20261115.md), [AgentFoundry usage record](docs/AF_USAGE_20261115.md) and [public release receipt](docs/PUBLIC_RELEASE_20261115.md).
 
 ![Rihai with the actual 40-record synthetic roster loaded](docs/qa-20261114/desktop-loaded.jpg)
 
@@ -50,7 +52,7 @@ python -m http.server 8000 --bind 127.0.0.1
 
 Open `http://127.0.0.1:8000/`. Select **Load sample roster**, use review date **2026-11-14**, expand **Show reasoning**, then open **Draft application** on an actionable row. All asset paths are relative so the application can also run below a static hosting subpath.
 
-The current development preview is `http://127.0.0.1:5197/rihai/` while its local preview process is running. This is not a public deployment.
+The public demo is https://smyll.github.io/rihai/ . The development preview is `http://127.0.0.1:5197/rihai/` while its local preview process is running.
 
 ## Roster format
 
@@ -83,7 +85,7 @@ The prototype was first built locally with Codex. On 15 November 2026, the exist
 
 ## Deployment and pilot plan
 
-The release is prepared for static hosting, with MIT licensing and a Node test workflow. Publication is pending authorization. No real prisoner records, external users, partner agreement or operational deployment has been used.
+The prototype is publicly hosted on GitHub Pages, with MIT licensing and a Node test workflow. No real prisoner records, field pilot, partner agreement, filed application or release outcome has been used or measured.
 
 A possible future pilot is a month with a DLSA prison legal-aid clinic, after a qualified legal audit and a privacy assessment. There is no existing partner. Intended measures are records flagged, applications actually filed, court outcomes and elapsed time from identification to filing; none are current results.
 

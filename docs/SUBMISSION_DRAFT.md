@@ -1,6 +1,6 @@
 # Code for a Billion — submission draft
 
-Not submitted. AgentFoundry usage is recorded; public repository, deployment and entrant details must be completed before submission.
+Submitted through the official issue form on 15 November 2026 at 03:18:12 HKT. The [submitted form and receipt](https://github.com/karlmehta/code-for-a-billion/issues/142) are authoritative; this file retains the preparation text.
 
 ## Team / Project name
 
@@ -8,7 +8,7 @@ Rihai
 
 ## Team members
 
-[Entrant to confirm preferred public name. Solo project.]
+Zichang Lu (@smyll) — solo.
 
 ## Problem statement
 
@@ -24,11 +24,11 @@ AgentFoundry use: the existing Rihai project was opened in AF 0.1.80 on 15 Novem
 
 ## GitHub repository URL
 
-[Not published — pending authorization.]
+https://github.com/smyll/rihai
 
 ## Demo URL
 
-[Not deployed — pending authorization.]
+https://smyll.github.io/rihai/
 
 ## Scale and severity
 
@@ -38,12 +38,14 @@ NCRB's Prison Statistics India 2024 reports 511,542 prisoners at 31 December 202
 
 ## Deployment and impact data
 
-Local prototype only. No public deployment, external trial, filed application or release outcome. A prospective one-month DLSA clinic pilot would follow legal and privacy review; no partner has agreed. Track flagged records, filed applications, court outcomes and time to filing.
+Public prototype deployed on GitHub Pages. The live site was checked for sample loading, normal drafting and the separate court-determination request. The 158-test GitHub Actions run passed. No field pilot, filed application or release outcome has been measured. A prospective DLSA clinic pilot would follow legal and privacy review; no partner has agreed.
 
 ## Track
 
-Timely Justice — Legal Backlog (listed on the live official competition page checked 15 November 2026).
+Requested track: Timely Justice — Legal Backlog. The official GitHub form only offered legacy categories, so Other was selected with the intended track stated explicitly in the submitted body, as confirmed by the entrant.
 
 ## Contact email
+
+Recorded in the official submission using the entrant-confirmed address.
 
 
