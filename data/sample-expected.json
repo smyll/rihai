@@ -1,0 +1,15 @@
+{
+  "asOf": "2026-11-14",
+  "counts": {
+    "OUTER_LIMIT": 2,
+    "ELIGIBLE_NOW": 6,
+    "ELIGIBLE_IF_FIRST_TIME_VERIFIED": 0,
+    "DUE_SOON": 0,
+    "NEEDS_REVIEW": 16,
+    "NOT_YET": 7,
+    "BARRED_479_2": 4,
+    "EXCLUDED": 5
+  },
+  "total": 40,
+  "womenApplicationDue": 3
+}

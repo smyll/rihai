@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Rihai — Undertrial custody review</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <header><div><h1>Rihai <span lang="hi">रिहाई</span></h1><p class="lead">Find custody deadlines. Show the reasoning. Prepare the application.</p><p>Section 479 BNSS review workspace for prison offices and legal-aid teams.</p></div><label class="date-label">Review date<input id="review-date" type="date" required></label></header>
+    <section class="import-area" id="drop-zone" aria-labelledby="import-title">
+      <div><h2 id="import-title">Start with a roster</h2><p>Drop a CSV here, or choose a file. The roster stays in this browser tab's memory.</p></div>
+      <div class="actions"><label class="file-label">Choose roster CSV<input id="roster-file" type="file" accept=".csv,text/csv"></label><button id="load-sample" type="button">Load sample roster</button><a href="./data/sample-roster.csv" download>Download sample CSV</a></div>
+    </section>
+    <p id="feedback" role="status" aria-live="polite">Load the fictional sample to explore the workflow.</p>
+    <section id="summary" class="summary" aria-label="Roster summary"></section>
+    <section aria-labelledby="roster-title">
+      <div class="section-top"><div><h2 id="roster-title">Custody review</h2><p id="roster-info">No roster loaded.</p></div><div class="actions"><button id="export" type="button" disabled>Export review CSV</button><button id="meeting" type="button" disabled>Print UTRC meeting pack</button></div></div>
+      <div class="filters"><label>Search name or ID<input id="search" type="search" placeholder="Search the roster"></label><label>Status<select id="status"><option value="">All statuses</option></select></label></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable custody review roster"><table><thead><tr><th scope="col">ID / Name</th><th scope="col">Charges</th><th scope="col">In custody since</th><th scope="col">Days counted</th><th scope="col">Threshold date</th><th scope="col">Status</th><th scope="col">Action</th></tr></thead><tbody id="roster-body"><tr><td colspan="7">Your roster will appear here.</td></tr></tbody></table></div>
+    </section>
+    <section class="basis"><h2>How to use the result</h2><p>“Application due” is a prompt to verify records and approach the court. Review prior convictions, amended charges, other proceedings and accused-caused delay. Multi-charge and unresolved penalties go to legal review. An outer-limit alert concerns the listed case and does not cancel another case's remand order.</p><p>The supplied penalty table is a prototype reference, not a certified legal database. <a href="https://cytrain.ncrb.gov.in/staticpage/web_pages/ChaptersBNSS.html" target="_blank" rel="noopener noreferrer">Read the BNSS text</a>. <a href="./docs/LEGAL_REVIEW.md">Review the calculation policy</a>.</p></section>
+    <footer><p>Rihai — prepared for Code for a Billion. Local prototype; AgentFoundry use and deployment are pending verification.</p><p>MIT licensed. Publication link will be added after deployment.</p></footer>
+  </main>
+  <dialog id="application-dialog" aria-labelledby="application-title"><div class="dialog-toolbar"><h2 id="application-title">Application draft</h2><button id="close-draft" type="button">Close</button><button id="print-draft" type="button" disabled>Print draft</button></div><article id="application-content"></article></dialog>
+  <section id="print-content" aria-label="Print document"></section>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

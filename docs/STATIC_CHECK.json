@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-14T16:17:38.118402+00:00",
+  "resourcesPresent": [
+    "index.html",
+    "styles.css",
+    "src/app.js",
+    "src/engine.js",
+    "src/parser.js",
+    "src/statutes.js",
+    "src/dates.js",
+    "src/csv.js",
+    "src/draft.js",
+    "data/sample-roster.csv",
+    "docs/LEGAL_REVIEW.md"
+  ],
+  "uniqueHtmlIds": 20,
+  "allAppBindingsPresent": true,
+  "persistentStorageAndUnsafeHtmlSinksAbsent": true,
+  "visualOrBrowserExecution": true,
+  "httpExecution": true,
+  "blocked": null,
+  "uiEventAdapterTest": "passed; Node test-only adapter, not browser rendering",
+  "sourceSyntax": "all seven source modules passed",
+  "browserEvidence": "docs/BROWSER_QA_20261115.md",
+  "previousBlocked": "Earlier saved origin denial; user enabled that origin and later verification succeeded."
+}

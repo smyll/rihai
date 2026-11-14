@@ -1,0 +1,8 @@
+incoming/
+.local/
+node_modules/
+*.log
+.env*
+docs/CONTROLLER_REPORT.md
+docs/BUILD_STATE.json
+!data/sample-roster.csv

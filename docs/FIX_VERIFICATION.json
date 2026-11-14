@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-11-14T15:31:49.427136+00:00",
+  "scope": "four findings from SELF_REVIEW_20261114.md",
+  "preFixTargetedTests": {
+    "total": 109,
+    "passed": 93,
+    "failed": 16
+  },
+  "postFixFullTests": {
+    "command": "npm test",
+    "total": 115,
+    "passed": 115,
+    "failed": 0
+  },
+  "sourceSyntax": "7/7 passed",
+  "uiStateTest": "passed using test-only DOM/event adapter",
+  "actualBrowserRendering": true,
+  "actualPrintPreview": true,
+  "preservedFilesSHA256": {
+    "data/sample-roster.csv": "1d71f05de39a55f25fc03137fa91a0bd8b5ea1fac9f1b98d26b6256e7fdf4469",
+    "src/statutes.js": "e1c02c313120892165ba23173940ba4f42100d76640e3ac2de3b329be2b1a4dc"
+  },
+  "originalArchiveSHA256": "c4cf3ce1b7429fc12c90e9947e303df1c7362968d9d58ec8bc1d737f99898039",
+  "sampleReviewCount": 16,
+  "sampleInputChanged": false,
+  "statuteNumericalPenaltiesChanged": false,
+  "subsequentBrowserEvidence": "docs/BROWSER_QA_20261115.md",
+  "postPrintLayoutTests": {
+    "command": "npm test",
+    "passed": 115,
+    "failed": 0
+  }
+}

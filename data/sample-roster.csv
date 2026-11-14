@@ -1,0 +1,41 @@
+prisoner_id,name,gender,age,prison,court,case_no,charges,custody_start,first_time,other_pending_cases,excluded_delay_days,notes
+SYN-001,Synthetic person 001,female,22,Demonstration facility,Demonstration district court,FICTIONAL-001,BNS 303(2),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-002,Synthetic person 002,male,23,Demonstration facility,Demonstration district court,FICTIONAL-002,BNS 303(2),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-003,Synthetic person 003,male,24,Demonstration facility,Demonstration district court,FICTIONAL-003,BNS 303(2),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-004,Synthetic person 004,female,25,Demonstration facility,Demonstration district court,FICTIONAL-004,BNS 303(2),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-005,Synthetic person 005,male,26,Demonstration facility,Demonstration district court,FICTIONAL-005,धारा 303(2) बीएनएस,2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-006,Synthetic person 006,male,27,Demonstration facility,Demonstration district court,FICTIONAL-006,BNS 303(2),2025-06-02,yes,0,60,Entirely fictional record; no real person or case.
+SYN-007,Synthetic person 007,female,28,Demonstration facility,Demonstration district court,FICTIONAL-007,BNS 115(2),2025-09-01,no,0,0,Entirely fictional record; no real person or case.
+SYN-008,Synthetic person 008,male,29,Demonstration facility,Demonstration district court,FICTIONAL-008,IPC 323,2023-01-10,yes,2,0,Entirely fictional record; no real person or case.
+SYN-009,Synthetic person 009,male,30,Demonstration facility,Demonstration district court,FICTIONAL-009,BNS 303(2),2025-06-02,unknown,0,0,Entirely fictional record; no real person or case.
+SYN-010,Synthetic person 010,female,31,Demonstration facility,Demonstration district court,FICTIONAL-010,BNS 303(2),2025-06-02,unknown,0,0,Entirely fictional record; no real person or case.
+SYN-011,Synthetic person 011,male,32,Demonstration facility,Demonstration district court,FICTIONAL-011,BNS 303(2),2025-06-02,unknown,0,0,Entirely fictional record; no real person or case.
+SYN-012,Synthetic person 012,male,33,Demonstration facility,Demonstration district court,FICTIONAL-012,BNS 303(2),2025-06-02,unknown,0,0,Entirely fictional record; no real person or case.
+SYN-013,Synthetic person 013,female,34,Demonstration facility,Demonstration district court,FICTIONAL-013,BNS 303(2),2025-06-02,no,0,0,Entirely fictional record; no real person or case.
+SYN-014,Synthetic person 014,male,35,Demonstration facility,Demonstration district court,FICTIONAL-014,BNS 303(2),2025-06-02,no,0,0,Entirely fictional record; no real person or case.
+SYN-015,Synthetic person 015,male,36,Demonstration facility,Demonstration district court,FICTIONAL-015,BNS 303(2),2025-06-02,no,0,0,Entirely fictional record; no real person or case.
+SYN-016,Synthetic person 016,female,37,Demonstration facility,Demonstration district court,FICTIONAL-016,BNS 303(2),2025-06-02,no,0,0,Entirely fictional record; no real person or case.
+SYN-017,Synthetic person 017,male,38,Demonstration facility,Demonstration district court,FICTIONAL-017,BNS 303(2),2025-06-02,no,0,0,Entirely fictional record; no real person or case.
+SYN-018,Synthetic person 018,male,39,Demonstration facility,Demonstration district court,FICTIONAL-018,BNS 999,2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-019,Synthetic person 019,female,40,Demonstration facility,Demonstration district court,FICTIONAL-019,u/s 25 Arms Act,2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-020,Synthetic person 020,male,41,Demonstration facility,Demonstration district court,FICTIONAL-020,NDPS 20(b)(ii)(C),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-021,Synthetic person 021,male,42,Demonstration facility,Demonstration district court,FICTIONAL-021,BNS 109(1),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-022,Synthetic person 022,female,43,Demonstration facility,Demonstration district court,FICTIONAL-022,BNS 318,2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-023,Synthetic person 023,male,44,Demonstration facility,Demonstration district court,FICTIONAL-023,u/s 379/411 IPC,2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-024,Synthetic person 024,male,45,Demonstration facility,Demonstration district court,FICTIONAL-024,"BNS 115(2),351(2) r/w 3(5)",2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-025,Synthetic person 025,female,46,Demonstration facility,Demonstration district court,FICTIONAL-025,BNS 103(1),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-026,Synthetic person 026,male,47,Demonstration facility,Demonstration district court,FICTIONAL-026,BNS 64(1),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-027,Synthetic person 027,male,48,Demonstration facility,Demonstration district court,FICTIONAL-027,BNS 310(2),2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-028,Synthetic person 028,female,49,Demonstration facility,Demonstration district court,FICTIONAL-028,IPC 302,2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-029,Synthetic person 029,male,50,Demonstration facility,Demonstration district court,FICTIONAL-029,IPC 376,2025-06-02,yes,0,0,Entirely fictional record; no real person or case.
+SYN-030,Synthetic person 030,male,51,Demonstration facility,Demonstration district court,FICTIONAL-030,BNS 318(4),2024-08-01,yes,1,0,Entirely fictional record; no real person or case.
+SYN-031,Synthetic person 031,female,52,Demonstration facility,Demonstration district court,FICTIONAL-031,BNS 318(4),2024-08-01,yes,2,0,Entirely fictional record; no real person or case.
+SYN-032,Synthetic person 032,male,53,Demonstration facility,Demonstration district court,FICTIONAL-032,BNS 318(4),2024-08-01,yes,3,0,Entirely fictional record; no real person or case.
+SYN-033,Synthetic person 033,male,54,Demonstration facility,Demonstration district court,FICTIONAL-033,BNS 318(4),2024-08-01,yes,4,0,Entirely fictional record; no real person or case.
+SYN-034,Synthetic person 034,female,55,Demonstration facility,Demonstration district court,FICTIONAL-034,BNS 303(2),2026-10-01,yes,0,0,Entirely fictional record; no real person or case.
+SYN-035,Synthetic person 035,male,56,Demonstration facility,Demonstration district court,FICTIONAL-035,BNS 318(4),2026-10-01,no,0,0,Entirely fictional record; no real person or case.
+SYN-036,Synthetic person 036,male,22,Demonstration facility,Demonstration district court,FICTIONAL-036,BNS 303(2),2026-10-01,yes,0,0,Entirely fictional record; no real person or case.
+SYN-037,Synthetic person 037,female,23,Demonstration facility,Demonstration district court,FICTIONAL-037,BNS 318(4),2026-10-01,no,0,0,Entirely fictional record; no real person or case.
+SYN-038,Synthetic person 038,male,24,Demonstration facility,Demonstration district court,FICTIONAL-038,BNS 303(2),2026-10-01,yes,0,0,Entirely fictional record; no real person or case.
+SYN-039,Synthetic person 039,male,25,Demonstration facility,Demonstration district court,FICTIONAL-039,BNS 318(4),2026-10-01,no,0,0,Entirely fictional record; no real person or case.
+SYN-040,Synthetic person 040,female,26,Demonstration facility,Demonstration district court,FICTIONAL-040,BNS 303(2),2026-10-01,yes,0,0,Entirely fictional record; no real person or case.

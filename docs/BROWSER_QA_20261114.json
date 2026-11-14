@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-11-14T16:17:38.118402+00:00",
+  "requestedChecks": [
+    "actual desktop page",
+    "narrow-screen layout",
+    "review-date invalidation",
+    "review CSV date",
+    "application and UTRC print preview"
+  ],
+  "previewURL": "http://127.0.0.1:5197/rihai/",
+  "previewServer": "running as hidden background process 12608; listening only on 127.0.0.1:5197",
+  "browserAttempt": "Edge via cua.createBrowserTab",
+  "result": "VERIFIED_DESKTOP_NARROW_VIEW_DATE_EXPORT_AND_NATIVE_PRINT_PREVIEWS",
+  "reason": null,
+  "actualPageVerified": true,
+  "actualPrintPreviewVerified": true,
+  "userActionPending": null,
+  "attemptHistory": [
+    {
+      "checkedAt": "2026-11-14T15:49:10.030565+00:00",
+      "result": "BLOCKED_SAVED_ORIGIN_PERMISSION",
+      "reason": "Saved user permission or managed policy denies network egress to http://127.0.0.1:5197. Tool prohibits workaround, alternate browser surfaces, raw CDP or indirect execution."
+    },
+    {
+      "checkedAt": "2026-11-14T15:58:46.537602+00:00",
+      "result": "AWAITING_REOPENED_EDGE_TAB",
+      "reason": "Tab creation restricted in standalone sidebar mode; existing empty-URL tab observation blocked as invalid URL. No workaround attempted.",
+      "userActionPending": "Reopen the preview after server restart; initial user attempt failed while server was stopped."
+    }
+  ],
+  "originPermission": "User screenshot shows Browse and Download Always allow for http://127.0.0.1:5197",
+  "httpHealth": {
+    "status": 200,
+    "title": "Rihai — Undertrial custody review",
+    "verifiedAt": "2026-11-14T15:58:46.537602+00:00"
+  },
+  "completedLocalDate": "2026-11-15",
+  "record": "docs/BROWSER_QA_20261115.md",
+  "checks": {
+    "desktopViewport": [
+      1280,
+      900
+    ],
+    "desktopDocumentWidth": 1265,
+    "records": 40,
+    "legalReview": 16,
+    "conditionalPenaltyDraftButtonsForSYN009": 0,
+    "dateClearingRemovesOldOutput": true,
+    "recoveryReviewDate": "2026-11-15",
+    "downloadedCSVRows": 40,
+    "downloadReviewDate": "2026-11-15",
+    "downloadStatusesAndDaysMatch": true,
+    "narrowViewport": [
+      390,
+      844
+    ],
+    "narrowDocumentWidth": 375,
+    "tableContainerWidth": 341,
+    "tableContentWidth": 1080,
+    "singleDraftPreviewPages": 1,
+    "meetingPreviewPagesBefore": 12,
+    "meetingPreviewPagesAfter": 11,
+    "meetingReviewNotes": 16,
+    "meetingApplicationDrafts": 8,
+    "capturedConsoleWarningsOrErrors": 0,
+    "viewportReset": true,
+    "printAndSaveDialogsClosed": true
+  },
+  "savedPDFVerified": false,
+  "optionalPDFSave": "Canceled after native file-dialog cached element mapping failed; native preview evidence retained."
+}
