@@ -1,0 +1,156 @@
+- main:
+  - heading "Rihai रिहाई" [level=1]
+  - paragraph: Find custody deadlines. Show the reasoning. Prepare the application.
+  - paragraph: Section 479 BNSS review workspace for prison offices and legal-aid teams.
+  - text: Review date
+  - textbox "Review date": 2026-11-15
+  - region "Start with a roster":
+    - heading "Start with a roster" [level=2]
+    - paragraph: Drop a CSV here, or choose a file. The roster stays in this browser tab's memory.
+    - text: Choose roster CSV
+    - button "Choose roster CSV"
+    - button "Load sample roster"
+    - link "Download sample CSV":
+      - /url: ./data/sample-roster.csv
+  - status: Loaded 6 records from synthetic-review-cases.csv. Processing stays in this tab.
+  - region "Roster summary":
+    - strong: "6"
+    - text: Total reviewed
+    - strong: "1"
+    - text: Outer-limit alert
+    - strong: "0"
+    - text: Application due
+    - strong: "0"
+    - text: Verify first-time status
+    - strong: "1"
+    - text: Due within 60 days
+    - strong: "4"
+    - text: Legal review needed
+    - strong: "0"
+    - text: Not yet due
+    - strong: "0"
+    - text: Other pending cases
+    - strong: "0"
+    - text: Death / life exclusion
+    - strong: "1"
+    - text: "Women: application due / outer limit"
+  - region "Custody review":
+    - heading "Custody review" [level=2]
+    - paragraph: 6 shown of 6 people. Review date 2026-11-15.
+    - button "Export review CSV"
+    - button "Print UTRC meeting pack"
+    - text: Search name or ID
+    - searchbox "Search name or ID"
+    - text: Status
+    - combobox "Status":
+      - option "All statuses" [selected]
+      - option "Outer-limit alert"
+      - option "Application due"
+      - option "Verify first-time status"
+      - option "Due within 60 days"
+      - option "Legal review needed"
+      - option "Not yet due"
+      - option "Other pending cases"
+      - option "Death / life exclusion"
+    - region "Scrollable custody review roster":
+      - table:
+        - rowgroup:
+          - row "ID / Name Charges In custody since Days counted Threshold date Status Action":
+            - columnheader "ID / Name"
+            - columnheader "Charges"
+            - columnheader "In custody since"
+            - columnheader "Days counted"
+            - columnheader "Threshold date"
+            - columnheader "Status"
+            - columnheader "Action"
+        - rowgroup:
+          - row "Synthetic outer-limit case QA-OUTER Show reasoning BNS 115(2),127(2) 2025-01-10 674 2025-07-12 Outer-limit alert Draft application":
+            - cell "Synthetic outer-limit case QA-OUTER Show reasoning":
+              - generic: Synthetic outer-limit case
+              - generic: QA-OUTER
+              - button "Show reasoning"
+            - cell "BNS 115(2),127(2)"
+            - cell "2025-01-10"
+            - cell "674"
+            - cell "2025-07-12"
+            - cell "Outer-limit alert":
+              - generic: Outer-limit alert
+            - cell "Draft application":
+              - button "Draft application"
+          - row "Synthetic knowledge-limb case QA-PART-II Show reasoning IPC 304 Pt. II 2022-01-01 1779 2027-01-01 Due within 60 days Monitor":
+            - cell "Synthetic knowledge-limb case QA-PART-II Show reasoning":
+              - generic: Synthetic knowledge-limb case
+              - generic: QA-PART-II
+              - button "Show reasoning"
+            - cell "IPC 304 Pt. II"
+            - cell "2022-01-01"
+            - cell "1779"
+            - cell "2027-01-01"
+            - cell "Due within 60 days":
+              - generic: Due within 60 days
+            - cell "Monitor"
+          - 'row "Synthetic unresolved outer case QA-UNKNOWN Show reasoning BNS 115(2),999 2025-01-10 674 2025-07-12 Legal review needed Reference only: Outer-limit alert Review records"':
+            - cell "Synthetic unresolved outer case QA-UNKNOWN Show reasoning":
+              - generic: Synthetic unresolved outer case
+              - generic: QA-UNKNOWN
+              - button "Show reasoning"
+            - cell "BNS 115(2),999"
+            - cell "2025-01-10"
+            - cell "674"
+            - cell "2025-07-12"
+            - 'cell "Legal review needed Reference only: Outer-limit alert"':
+              - generic: Legal review needed
+              - generic: "Reference only: Outer-limit alert"
+            - cell "Review records"
+          - 'row "Synthetic applicable-law case QA-PRE-BNS Show reasoning BNS 303(2) 2024-03-01 989 2025-03-01 Legal review needed Reference only: Application due Review records"':
+            - cell "Synthetic applicable-law case QA-PRE-BNS Show reasoning":
+              - generic: Synthetic applicable-law case
+              - generic: QA-PRE-BNS
+              - button "Show reasoning"
+            - cell "BNS 303(2)"
+            - cell "2024-03-01"
+            - cell "989"
+            - cell "2025-03-01"
+            - 'cell "Legal review needed Reference only: Application due"':
+              - generic: Legal review needed
+              - generic: "Reference only: Application due"
+            - cell "Review records"
+          - 'row "Synthetic court-review case QA-COURT Show reasoning BNS 303(2),317(2) 2025-01-01 683 2026-01-01 Legal review needed Reference only: Application due 479(2) question for the Court Draft court-review request"':
+            - cell "Synthetic court-review case QA-COURT Show reasoning":
+              - generic: Synthetic court-review case
+              - generic: QA-COURT
+              - button "Show reasoning"
+            - cell "BNS 303(2),317(2)"
+            - cell "2025-01-01"
+            - cell "683"
+            - cell "2026-01-01"
+            - 'cell "Legal review needed Reference only: Application due 479(2) question for the Court"':
+              - generic: Legal review needed
+              - generic: "Reference only: Application due"
+              - generic: 479(2) question for the Court
+            - cell "Draft court-review request":
+              - button "Draft court-review request" [active]
+          - row "Synthetic ambiguous-limb case QA-BARE Show reasoning IPC 304 2022-01-01 1779 — Legal review needed Review records":
+            - cell "Synthetic ambiguous-limb case QA-BARE Show reasoning":
+              - generic: Synthetic ambiguous-limb case
+              - generic: QA-BARE
+              - button "Show reasoning"
+            - cell "IPC 304"
+            - cell "2022-01-01"
+            - cell "1779"
+            - cell "—"
+            - cell "Legal review needed":
+              - generic: Legal review needed
+            - cell "Review records"
+  - heading "How to use the result" [level=2]
+  - paragraph: “Application due” is a prompt to verify records and approach the court. Review prior convictions, amended charges, other proceedings and accused-caused delay. Multiple charges remain in legal review; qualifying rows can prepare a separate request asking the court to determine section 479(2). Unresolved penalties still require record review. An outer-limit alert concerns the listed case and does not cancel another case's remand order.
+  - paragraph:
+    - text: The supplied penalty table is a prototype reference.
+    - link "Read the BNSS text":
+      - /url: https://cytrain.ncrb.gov.in/staticpage/web_pages/ChaptersBNSS.html
+    - text: .
+    - link "Review the calculation policy":
+      - /url: ./docs/LEGAL_REVIEW.md
+    - text: .
+  - paragraph: Rihai — prepared for Code for a Billion. Local prototype; developed with Codex and an AgentFoundry SMART-Code repair pass.
+  - paragraph: MIT licensed. Publication link will be added after deployment.

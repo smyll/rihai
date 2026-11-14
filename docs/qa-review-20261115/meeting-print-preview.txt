@@ -1,0 +1,565 @@
+Observed native Edge portrait print preview
+Review date: 2026-11-15
+Pages: 13
+
+预览已更新
+￼
+打印
+总数: 13 纸张
+￼
+打印机
+Microsoft Print to PDF
+份数
+￼
+1
+￼
+布局
+纵向
+横向
+￼
+￼
+页面
+全部
+仅奇数页
+仅偶数页
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+颜色
+颜色
+更多设置
+￼
+使用系统对话框打印… (Ctrl+Shift+P)
+打印
+取消
+￼
+0
+￼
+￼
+PDF 文档加载已完成。
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+UTRC custody review pack
+
+Review date: 2026-11-15. 40 records reviewed.
+
+Outer-limit alert: 2; Application due: 6; Verify first-time status: 0; Due within 60 days: 0; Legal
+
+review needed: 16; Not yet due: 7; Other pending cases: 4; Death / life exclusion: 5
+
+ID Name Charges Status Third / half / outer date
+
+SYN008
+Synthetic person
+008
+IPC 323 Outer-limit alert 2023-05-12 / 2023-07-12 / 2024-
+01-10
+
+SYN007
+Synthetic person
+007
+BNS 115(2) Outer-limit alert 2026-01-01 / 2026-03-03 / 2026-
+09-01
+
+SYN001
+Synthetic person
+001
+BNS 303(2) Application due 2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN002
+Synthetic person
+002
+BNS 303(2) Application due 2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN003
+Synthetic person
+003
+BNS 303(2) Application due 2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN004
+Synthetic person
+004
+BNS 303(2) Application due 2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN005
+Synthetic person
+005
+धारा 303(2) बीएनएस Application due 2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN006
+Synthetic person
+006
+BNS 303(2) Application due 2026-08-02 / 2027-01-31 / 2028-
+08-01
+
+SYN024
+Synthetic person
+024
+BNS 115(2),351(2) r/w
+3(5)
+Legal review
+needed
+2026-02-01 / 2026-06-02 / 2027-
+06-02
+
+SYN023
+Synthetic person
+023
+u/s 379/411 IPC Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN009
+Synthetic person
+009
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN010
+Synthetic person
+010
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN011
+Synthetic person
+011
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN012
+Synthetic person
+012
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN013
+Synthetic person
+013
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN014
+Synthetic person
+014
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN015
+Synthetic person
+015
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 1/13
+ID Name Charges Status Third / half / outer date
+
+SYN016
+Synthetic person
+016
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN017
+Synthetic person
+017
+BNS 303(2) Legal review
+needed
+2026-06-03 / 2026-12-02 / 2028-
+06-02
+
+SYN021
+Synthetic person
+021
+BNS 109(1) Legal review
+needed
+2028-10-02 / 2030-06-02 / 2035-
+06-02
+
+SYN020
+Synthetic person
+020
+NDPS 20(b)(ii)(C) Legal review
+needed
+2032-02-01 / 2035-06-03 / 2045-
+06-02
+
+SYN018
+Synthetic person
+018
+BNS 999 Legal review
+needed
+Unresolved
+
+SYN019
+Synthetic person
+019
+u/s 25 Arms Act Legal review
+needed
+Unresolved
+
+SYN022
+Synthetic person
+022
+BNS 318 Legal review
+needed
+Unresolved
+
+Dates concern supplied records only. Resolve legal-review issues, prior convictions, other
+proceedings, and custody records before filing.
+
+SYN-024: review required
+
+Section 479(2) expressly mentions more than one offence. Multiple substantive charges in
+one case require a legal determination; this prototype does not mark them application-due.
+
+SYN-023: review required
+
+Section 479(2) expressly mentions more than one offence. Multiple substantive charges in
+one case require a legal determination; this prototype does not mark them application-due.
+
+SYN-009: review required
+
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-010: review required
+
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-011: review required
+
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-012: review required
+
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 2/13
+SYN-013: review required
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-014: review required
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-015: review required
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-016: review required
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-017: review required
+BNS 303(2): possible repeat / second-conviction penalty. Confirm prior offence and applicable
+maximum before using the base-term dates.
+
+SYN-021: review required
+BNS 109(1): life if hurt was caused
+
+SYN-020: review required
+NDPS 20(b)(ii)(C): s.37 NDPS bail conditions; courts differ on how they interact with s.479
+
+SYN-018: review required
+BNS 999: unknown or ambiguous subsection
+No determinate maximum imprisonment term is available.
+
+SYN-019: review required
+u/s 25 Arms Act: Act not in Rihai's statute table yet
+No determinate maximum imprisonment term is available.
+
+SYN-022: review required
+BNS 318: unknown or ambiguous subsection
+No determinate maximum imprisonment term is available.
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 3/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-008
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 008, roster ID SYN-008, recorded in custody since 2023-01-10.
+The recorded charges and stated penalties are: IPC 323: 12 months maximum.
+The largest resolved term is 12 months (365 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 1405 days.
+The listed-case maximum-term reference date under the third proviso to section 479(1) is
+2024-01-10. The Court is requested to examine the current-case outer-limit position and pass
+appropriate orders. This draft makes no finding about continued detention under any other
+case or remand order.
+Other pending cases according to supplied records: 2.
+For verification: Outer-limit alert is for the listed case only. It does not discharge custody or
+remand orders in other cases. Confirm all case-specific terms and orders with the court.
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 4/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-007
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 007, roster ID SYN-007, recorded in custody since 2025-09-01.
+The recorded charges and stated penalties are: BNS 115(2): 12 months maximum.
+The largest resolved term is 12 months (365 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 440 days.
+The listed-case maximum-term reference date under the third proviso to section 479(1) is
+2026-09-01. The Court is requested to examine the current-case outer-limit position and pass
+appropriate orders. This draft makes no finding about continued detention under any other
+case or remand order.
+Other pending cases according to supplied records: 0.
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 5/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-001
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 001, roster ID SYN-001, recorded in custody since 2025-06-02.
+The recorded charges and stated penalties are: BNS 303(2): 36 months maximum.
+The largest resolved term is 36 months (1096 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 531 days.
+Recorded first-time status: yes. The one-third threshold date is 2026-06-03. Upon verification
+of the charges, custody, antecedents and pending proceedings, the Court is requested to
+proceed under section 479(1) for release on bond.
+Other pending cases according to supplied records: 0.
+For verification: BNS 303(2): RI 1–5 years on second or subsequent theft conviction
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 6/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-002
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 002, roster ID SYN-002, recorded in custody since 2025-06-02.
+The recorded charges and stated penalties are: BNS 303(2): 36 months maximum.
+The largest resolved term is 36 months (1096 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 531 days.
+Recorded first-time status: yes. The one-third threshold date is 2026-06-03. Upon verification
+of the charges, custody, antecedents and pending proceedings, the Court is requested to
+proceed under section 479(1) for release on bond.
+Other pending cases according to supplied records: 0.
+For verification: BNS 303(2): RI 1–5 years on second or subsequent theft conviction
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 7/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-003
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 003, roster ID SYN-003, recorded in custody since 2025-06-02.
+The recorded charges and stated penalties are: BNS 303(2): 36 months maximum.
+The largest resolved term is 36 months (1096 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 531 days.
+Recorded first-time status: yes. The one-third threshold date is 2026-06-03. Upon verification
+of the charges, custody, antecedents and pending proceedings, the Court is requested to
+proceed under section 479(1) for release on bond.
+Other pending cases according to supplied records: 0.
+For verification: BNS 303(2): RI 1–5 years on second or subsequent theft conviction
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 8/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-004
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 004, roster ID SYN-004, recorded in custody since 2025-06-02.
+The recorded charges and stated penalties are: BNS 303(2): 36 months maximum.
+The largest resolved term is 36 months (1096 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 531 days.
+Recorded first-time status: yes. The one-third threshold date is 2026-06-03. Upon verification
+of the charges, custody, antecedents and pending proceedings, the Court is requested to
+proceed under section 479(1) for release on bond.
+Other pending cases according to supplied records: 0.
+For verification: BNS 303(2): RI 1–5 years on second or subsequent theft conviction
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 9/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-005
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 005, roster ID SYN-005, recorded in custody since 2025-06-02.
+The recorded charges and stated penalties are: BNS 303(2): 36 months maximum.
+The largest resolved term is 36 months (1096 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 531 days.
+Recorded first-time status: yes. The one-third threshold date is 2026-06-03. Upon verification
+of the charges, custody, antecedents and pending proceedings, the Court is requested to
+proceed under section 479(1) for release on bond.
+Other pending cases according to supplied records: 0.
+For verification: BNS 303(2): RI 1–5 years on second or subsequent theft conviction
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 10/13
+DRAFT — verify against case records before filing
+APPLICATION UNDER SECTION 479(3) OF THE BHARATIYA NAGARIK
+SURAKSHA SANHITA, 2023
+To: The Court of Demonstration district court
+In: FICTIONAL-006
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 006, roster ID SYN-006, recorded in custody since 2025-06-02.
+The recorded charges and stated penalties are: BNS 303(2): 36 months maximum.
+The largest resolved term is 36 months (1096 calendar days from the recorded custody start).
+Accused-caused delay recorded: 60 days. Counted custody at 2026-11-15: 471 days.
+Recorded first-time status: yes. The one-third threshold date is 2026-08-02. Upon verification
+of the charges, custody, antecedents and pending proceedings, the Court is requested to
+proceed under section 479(1) for release on bond.
+Other pending cases according to supplied records: 0.
+For verification: BNS 303(2): RI 1–5 years on second or subsequent theft conviction
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 11/13
+DRAFT — verify against case records before filing
+REQUEST FOR COURT DETERMINATION OF SECTION 479(2), BNSS,
+2023
+To: The Court of Demonstration district court
+In: FICTIONAL-024
+From: The Superintendent, Demonstration facility
+Concerning Synthetic person 024, roster ID SYN-024, recorded in custody since 2025-06-02.
+The recorded charges and stated penalties are: BNS 115(2): 12 months maximum; BNS 351(2):
+24 months maximum.
+The largest resolved term is 24 months (730 calendar days from the recorded custody start).
+Accused-caused delay recorded: 0 days. Counted custody at 2026-11-15: 531 days.
+The roster lists these charges together under case FICTIONAL-024. Recorded first-time status:
+yes. The reference one-third date is 2026-02-01. The Court is requested to determine whether
+section 479(2) ('more than one offence') applies to these charges in the recorded case, and to
+consider appropriate orders under section 479 after verifying the case records. The status
+remains LEGAL REVIEW NEEDED. This request does not assert eligibility for release or treat
+several charges as one offence.
+Other pending cases according to supplied records: 0.
+The Court retains its powers under the second proviso after hearing the Public Prosecutor
+and recording reasons. This is a record-based draft for review, not a release order.
+Verification checklist: [ ] Current/amended charges and applicable punishment; [ ] Prior
+convictions; [ ] Other pending cases/offences and remand orders; [ ] Accused-caused delay
+and custody calculation.
+Superintendent signature: ____________________
+Date: ____________________
+
+2026/11/15 02:35 Rihai — Undertrial custody review
+
+127.0.0.1:5197/rihai/ 12/13
+DRAFT — verify against case records before filing
+REQUEST FOR COURT DETERMINATION OF SECTION 479(2), BNSS,
+2023
+To: The Court of Demonstration district court
+In: FICTIONAL-023
+From: Th

@@ -2,13 +2,15 @@
 
 Rihai helps prison offices, Undertrial Review Committees and legal-aid teams identify custody thresholds for Section 479 BNSS review, inspect the calculation for every record and prepare a Superintendent's application draft.
 
-**Status:** local working prototype. Desktop, narrow-screen and native Edge print-preview checks completed on 2026-11-15. Public deployment and AgentFoundry use remain pending; there is no published demo or repository URL yet. See the [browser acceptance record](docs/BROWSER_QA_20261115.md).
+**Status:** working local prototype with 158 passing tests, 40 unchanged fictional sample records and an actual AgentFoundry SMART-Code repair pass. The 15 November rule and drafting revisions are recorded below; public deployment is pending. See the [earlier browser acceptance record](docs/BROWSER_QA_20261115.md) and [AgentFoundry usage record](docs/AF_USAGE_20261115.md).
 
 ![Rihai with the actual 40-record synthetic roster loaded](docs/qa-20261114/desktop-loaded.jpg)
 
 ## The problem
 
-Identifying a custody deadline requires combining the actual charges, the applicable maximum punishment, continuous custody, prior convictions, other pending proceedings and excluded delay. The [Ministry of Home Affairs implementation advisory](https://origin1504-mha.nic.in/sites/default/files/Advisory%28BNSS%29_17102024.pdf) asks prison authorities to identify relevant undertrial prisoners and move applications. Rihai makes that record-review workflow inspectable; no population or impact estimate is claimed for this prototype.
+At 31 December 2024, India held 511,542 prisoners, including 371,440 undertrials (72.6%). NCRB also reported 627 releases during 2024 under **BNSS 479 / CrPC 436A combined**. Its report carried forward West Bengal's 2023 data where 2024 data were unavailable. These figures describe the national context. [NCRB, Prison Statistics India 2024, pp. xi and xviii](https://www.ncrb.mha.gov.in/uploads/files/PSI-2024ason260220261.pdf).
+
+Identifying a custody deadline requires combining the charges, maximum punishment, continuous custody, prior convictions, other proceedings and excluded delay. The [Ministry of Home Affairs implementation advisory](https://origin1504-mha.nic.in/sites/default/files/Advisory%28BNSS%29_17102024.pdf) asks prison authorities to identify relevant undertrial prisoners and move applications. Rihai supports that record-review and application-preparation workflow. See the [source checks and reporting scope](docs/PRIMARY_SOURCE_AUDIT_20261115.md).
 
 ## What Rihai does
 
@@ -27,8 +29,9 @@ The roster is processed only in browser memory. No backend, account, AI service 
 | Unknown first-time status after one-third but before one-half, resolved penalty | Request verification; draft is explicitly conditional |
 | Death or life punishment specified | Exclude the fractional-term route |
 | Other pending cases before the current-case outer limit | Flag section 479(2) |
-| Multiple substantive offences in one case | Keep arithmetic as reference; require legal review |
-| Current-case maximum term reached | Alert for court review; do not infer release from other remand orders |
+| Multiple substantive offences in one case | Keep legal-review status; a due, otherwise resolved record can draft a separate request for court determination of 479(2) |
+| Fully resolved finite current-case maximum reached | Preserve the outer-limit alert, including multiple charges; verify other remand orders |
+| IPC 304 / BNS 105 | Verify the limb; explicit knowledge-only limb uses ten years, intention limb carries life |
 | Unknown act/subsection, dependent or conditional penalty | Require review; show only resolved reference dates |
 | BNS 303(2) / 78(2), prior convictions present or unknown | Hold for repeat-penalty review; no application draft |
 
@@ -70,13 +73,13 @@ Exports include a `review_date` column from each evaluated record. Clearing or i
 
 ## Statute table
 
-`src/statutes.js` contains 151 BNS, IPC and NDPS reference entries from the supplied brief. Explicit subsection ambiguity is preserved. BNS 317 is not automatically mapped because the table contains several materially different punishment subsections.
+`src/statutes.js` contains the original 151 BNS, IPC and NDPS reference entries plus four explicit homicide-limb aliases, for 155 entries. The two bare homicide sections now require limb verification. BNS 317 is not automatically mapped because its subsections have materially different penalties. Targeted changes and their sources are described in [the legal policy](docs/LEGAL_REVIEW.md).
 
 Before adding or certifying a row, a qualified reviewer should check the current statute, punishment limb, commencement, prior-conviction enhancements, jurisdiction and interaction with special-law bail conditions. The [NCRB BNSS compendium](https://cytrain.ncrb.gov.in/staticpage/web_pages/ChaptersBNSS.html) and [BPRD publication](https://bprd.nic.in/uploads/pdf/Final_BNSS.pdf) provide the procedural source; the individual offence rows still need a complete primary-law audit before operational use. Changes need tests for both clear and unresolved cases.
 
-## Built with AgentFoundry — evidence status
+## Built with AgentFoundry
 
-This version was written and tested locally by Codex on Windows. No AgentFoundry project, model run, terminal session or build screenshot has been verified. The official AgentFoundry website is accessible and advertises a Windows application; that establishes availability, not actual use. A real AgentFoundry development/verification step and accurate evidence are still needed before claiming this competition requirement is met.
+The prototype was first built locally with Codex. On 15 November 2026, the existing project was opened in AgentFoundry 0.1.80 and SMART-Code read the source/tests and wrote initial parser and BNS 105 changes. That task stopped at AF's ten-round tool-use cap. Codex preserved its original patch, completed the remaining fixes, corrected parser compatibility issues, added independent regression tests and ran the tests separately. [Actual usage and evidence scope](docs/AF_USAGE_20261115.md).
 
 ## Deployment and pilot plan
 
@@ -86,9 +89,9 @@ A possible future pilot is a month with a DLSA prison legal-aid clinic, after a 
 
 ## Verification
 
-`npm test` currently passes 115 tests covering parsing, fixed-date examples, leaps/month ends, excluded delay, prior-conviction uncertainty, conditional-penalty holds, section 479(2) review, outer-limit scope, unsupported law, CSV safety, per-record review dates, draft placeholders, date-change UI state and the 40-record sample. The UI event tests use a minimal test-only DOM adapter. Separately, actual Edge verification covered 1280px desktop and 390px narrow viewports, date invalidation/recovery, the downloaded 40-row CSV and native print previews. A single application fits one page; the meeting pack uses 11 pages with the tested portrait printer settings. Review-note pagination was corrected after an initial 12-page preview split one note across pages. These checks apply to the supplied synthetic roster and tested settings.
+`npm test` passes 158 tests covering parsing, calendar/date boundaries, prior-conviction uncertainty, conditional penalties, outer-limit scope, 479(2) drafting gates, CSV safety and UI invalidation. Event-state tests use a minimal test-only DOM adapter. The [15 November review acceptance](docs/REVIEW_ACCEPTANCE_20261115.md) also records actual Edge import of six independent fictional regression cases, the downloaded CSV, the court-request dialog, a 390 CSS-pixel width check and native print previews. The new court request fits one portrait page. The original 40-row meeting pack now has 13 pages, including eight normal applications and two court-determination requests.
 
-The original sample CSV is unchanged; nine repeat-penalty records now move to review, making 16 review records in total. Software and rendering checks do not certify the legal table. See [screenshots, tested steps and print results](docs/BROWSER_QA_20261115.md).
+The original sample CSV is unchanged: two outer-limit alerts, six application-due records and sixteen legal-review records. Two of those review records now offer the separate court-determination request, while the nine unresolved repeat-penalty examples remain held for record review. Earlier browser evidence is retained in its dated [acceptance record](docs/BROWSER_QA_20261115.md).
 
 ## License
 

@@ -36,6 +36,6 @@ export function writeCSV(rows, headers = HEADERS) {
   return [headers.map(escape).join(','), ...rows.map(r => headers.map(h => escape(r[h])).join(','))].join('\r\n');
 }
 export function exportResults(results) {
-  const columns = [...HEADERS, 'review_date', 'status', 'days_counted', 'third_date', 'half_date', 'outer_date', 'threshold_date', 'review_reasons', 'flags'];
-  return writeCSV(results.map(r => ({ ...r.person, review_date: r.asOfDate, status: r.status, days_counted: r.daysCounted, third_date: r.dates.third, half_date: r.dates.half, outer_date: r.dates.outer, threshold_date: r.thresholdDate, review_reasons: r.issues.join(' | '), flags: r.flags.join(' | ') })), columns);
+  const columns = [...HEADERS, 'review_date', 'status', 'reference_status', 'court_review_request_available', 'days_counted', 'third_date', 'half_date', 'outer_date', 'threshold_date', 'review_reasons', 'flags'];
+  return writeCSV(results.map(r => ({ ...r.person, review_date: r.asOfDate, status: r.status, reference_status: r.calculatedStatus, court_review_request_available: Boolean(r.canRequestCourtReview), days_counted: r.daysCounted, third_date: r.dates.third, half_date: r.dates.half, outer_date: r.dates.outer, threshold_date: r.thresholdDate, review_reasons: r.issues.join(' | '), flags: r.flags.join(' | ') })), columns);
 }

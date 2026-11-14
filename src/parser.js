@@ -7,7 +7,10 @@ const aliases = [
 ];
 export function parseCharges(text, custodyStart = '') {
   let normalized = String(text ?? '').replace(/[०-९]/g, n => String('०१२३४५६७८९'.indexOf(n)))
-    .replace(/506\s*(?:Part\s*II|\(2\)|-\s*II)/gi, '506-II').replace(/\s*\(\s*/g, '(').replace(/\s*\)\s*/g, ')');
+    // These two sections have explicit intention / knowledge limbs. Numeric (2) is not a limb alias.
+    .replace(/\b(304|105)\s*(?:Part\s*|Pt\.?\s*|\(\s*|-\s*)(II|I)(?:\s*\))?(?![a-zA-Z0-9])/gi, (_, section, limb) => `${section}-${limb.toUpperCase()}`)
+    .replace(/\b506\s*(?:Part\s*II\b|\(2\)|\(II\)|-\s*II\b)/gi, '506-II')
+    .replace(/\s*\(\s*/g, '(').replace(/\s*\)\s*/g, ')');
   for (const [act, pattern] of aliases) normalized = normalized.replace(pattern, ` ${act} `);
   for (const [act, year] of [['BNS','2023'], ['IPC','1860'], ['NDPS','1985']]) normalized = normalized.replace(new RegExp(`\\b${act}\\s+Act(?:\\s*,?\\s*${year}\\b)?`, 'gi'), ` ${act} `);
   const items = [], unknown = [], flags = [];
@@ -22,7 +25,7 @@ export function parseCharges(text, custodyStart = '') {
       unknown.push(block + ': Act not in Rihai\'s statute table yet'); continue;
     }
     const acts = [...block.matchAll(/\b(BNS|IPC|NDPS)\b/g)];
-    const sections = [...block.matchAll(/\b\d+(?:[A-Za-z])?(?:-II|\([a-zA-Z0-9]+\))*(?:\([a-zA-Z0-9]+\))*/g)];
+    const sections = [...block.matchAll(/\b\d+(?:[A-Za-z])?(?:-I{1,2}(?![a-zA-Z0-9])|\([a-zA-Z0-9]+\))*/g)];
     if (!sections.length) { unknown.push(block); continue; }
     const prefix = acts.length && acts[0].index < sections[0].index;
     for (const found of sections) {
@@ -46,7 +49,7 @@ export function parseCharges(text, custodyStart = '') {
       if (record || modifiers[act].includes(section) || dependent[act].includes(section)) items.push({ act, section, raw: found[0] });
       else unknown.push(`${act} ${section}: unknown or ambiguous subsection`);
     }
-    const residue = block.replace(/\b(BNS|IPC|NDPS)\b/g, '').replace(/\b\d+(?:[A-Za-z])?(?:-II|\([a-zA-Z0-9]+\))*/g, '')
+    const residue = block.replace(/\b(BNS|IPC|NDPS)\b/g, '').replace(/\b\d+(?:[A-Za-z])?(?:-I{1,2}(?![a-zA-Z0-9])|\([a-zA-Z0-9]+\))*/g, '')
       .replace(/u\s*\/\s*s|r\s*\/\s*w|\b(?:sections?|secs?|read with|and)\b|धारा/gi, '').replace(/[\s,./:()\-]/g, '');
     if (residue) unknown.push(`Unparsed charge text: ${residue}`);
    }

@@ -7,8 +7,9 @@ export const LABELS = { OUTER_LIMIT: 'Outer-limit alert', ELIGIBLE_NOW: 'Applica
 // These conditions are noted in the supplied table but absent from roster fields.
 const repeatPenalties = new Set(['BNS:303(2)', 'BNS:78(2)']);
 const circumstancePenalties = new Set(['BNS:309(4)', 'IPC:392', 'BNS:110', 'IPC:308']);
+const multiOffenceReview = 'Section 479(2) expressly mentions more than one offence. Multiple substantive charges in one case require a legal determination; this prototype does not mark them application-due.';
 export function evaluate(row, asOfDate) {
-  const result = { person: { ...row }, asOfDate, status: 'NEEDS_REVIEW', flags: [], reasoning: [], issues: [], dates: {}, canDraft: false };
+  const result = { person: { ...row }, asOfDate, status: 'NEEDS_REVIEW', flags: [], reasoning: [], issues: [], dates: {}, canDraft: false, canRequestCourtReview: false };
   let start, asOf, delay, pending;
   try {
     start = date(row.custody_start); asOf = date(asOfDate);
@@ -38,7 +39,10 @@ export function evaluate(row, asOfDate) {
     const r = lookup(item.act, item.section);
     if (dependent[item.act].includes(item.section)) result.issues.push(`${item.act} ${item.section}: dependent, conspiracy, abetment or attempt provision needs the object offence.`);
     if (r?.review) result.issues.push(`${r.act} ${r.section}: ${r.note || 'Manual penalty review required.'}`);
-    if ((item.act === 'BNS' && row.custody_start < '2024-07-01') || (item.act === 'IPC' && row.custody_start >= '2024-07-01')) result.flags.push('Act/custody date mismatch: confirm the offence date and applicable law from the FIR. Custody date alone does not determine the applicable penal code.');
+    if (item.act === 'BNS' && row.custody_start < '2024-07-01') {
+      result.issues.push('BNS charge with continuous custody starting before commencement on 2024-07-01: confirm the offence date and applicable law from the FIR.');
+      result.flags.push('Act/custody date mismatch: applicable-law verification is required.');
+    } else if (item.act === 'IPC' && row.custody_start >= '2024-07-01') result.flags.push('Act/custody date mismatch: later custody may concern an older IPC offence. Confirm the offence date and applicable law from the FIR.');
     if (r?.note && !r.review) result.flags.push(`${r.act} ${r.section}: ${r.note}`);
     if (repeatPenalties.has(`${item.act}:${item.section}`) && result.firstTime !== 'yes') result.issues.push(`${item.act} ${item.section}: possible repeat / second-conviction penalty. Confirm prior offence and applicable maximum before using the base-term dates.`);
     if (circumstancePenalties.has(`${item.act}:${item.section}`)) result.issues.push(`${item.act} ${item.section}: conditional penalty (${r.note}). The roster does not establish these circumstances; verify the applicable maximum. Dates below use the table term for reference only.`);
@@ -46,10 +50,9 @@ export function evaluate(row, asOfDate) {
     if (item.act === 'BNS' && item.section.startsWith('61(')) result.issues.push('Criminal conspiracy: confirm the object offence and applicable punishment.');
   }
   if (pending === null) result.flags.push('Check e-Prisons / ICJS for other pending cases before filing.');
-  if (charged.length > 1) result.issues.push('Section 479(2) expressly mentions more than one offence. Multiple substantive charges in one case require a legal determination; this prototype does not mark them application-due.');
   const records = charged.map(i => lookup(i.act, i.section)).filter(Boolean);
   result.reasoning.push('Charges: ' + (records.map(r => `${r.act} ${r.section} (${r.death ? 'death punishment specified' : r.life ? 'life imprisonment specified' : r.maxMonths === null ? 'penalty needs review' : `maximum ${r.maxMonths} months`})`).join(', ') || 'no resolved penalty') + '.');
-  if (records.some(r => r.death || r.life)) {
+  if (records.some(r => (r.death || r.life) && !(r.act === 'BNS' && row.custody_start < '2024-07-01'))) {
     result.status = 'EXCLUDED';
     result.reasoning.push('A specified death/life punishment excludes the Section 479(1) fractional-term route. Other bail routes are outside this calculation.');
     return result;
@@ -76,11 +79,24 @@ export function evaluate(row, asOfDate) {
     result.calculatedStatus = result.status;
     if (pending > 0 && result.status === 'OUTER_LIMIT') result.flags.push('Outer-limit alert is for the listed case only. It does not discharge custody or remand orders in other cases. Confirm all case-specific terms and orders with the court.');
   }
+  if (charged.length > 1) {
+    const resolvedOuter = result.calculatedStatus === 'OUTER_LIMIT' && !result.issues.length && records.length === charged.length && records.every(r => Number.isInteger(r.maxMonths) && r.maxMonths > 0 && !r.death && !r.life && !r.review);
+    if (resolvedOuter) result.flags.push('Multiple substantive charges: the Section 479(2) qualification remains subject to the current-case outer-limit proviso. Verify the charges and all case-specific remand orders.');
+    else result.issues.push(multiOffenceReview);
+  }
   if (result.issues.length) result.status = 'NEEDS_REVIEW';
   result.issues = [...new Set(result.issues)]; result.flags = [...new Set(result.flags)];
+  result.canRequestCourtReview = result.status === 'NEEDS_REVIEW' && result.calculatedStatus === 'ELIGIBLE_NOW' && result.issues.length === 1 && result.issues[0] === multiOffenceReview && pending === 0 && Boolean(String(row.case_no ?? '').trim());
   result.reasoning.push(...result.issues.map(s => `Review: ${s}`), `Action: ${LABELS[result.status]}. Court determination and case-record verification are required.`);
+  if (result.canRequestCourtReview) result.reasoning.push('A separate court-determination request can be drafted because the recorded reference threshold has passed and the sole unresolved issue is section 479(2). The legal-review status remains unchanged.');
   result.canDraft = ['OUTER_LIMIT', 'ELIGIBLE_NOW', 'ELIGIBLE_IF_FIRST_TIME_VERIFIED'].includes(result.status);
   return result;
+}
+export function compareResults(a, b) {
+  const rank = status => { const i = STATUS_ORDER.indexOf(status); return i < 0 ? STATUS_ORDER.length : i; };
+  const reviewRank = r => r.status === 'NEEDS_REVIEW' ? rank(r.calculatedStatus) : 0;
+  const urgencyDate = r => (r.calculatedStatus === 'OUTER_LIMIT' ? r.dates.outer : r.thresholdDate) || '9999';
+  return rank(a.status) - rank(b.status) || reviewRank(a) - reviewRank(b) || urgencyDate(a).localeCompare(urgencyDate(b)) || a.person.prisoner_id.localeCompare(b.person.prisoner_id);
 }
 export function summarize(results) {
   const counts = Object.fromEntries(STATUS_ORDER.map(s => [s, results.filter(r => r.status === s).length]));

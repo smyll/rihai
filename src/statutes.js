@@ -153,12 +153,35 @@ export const statutes = [
   {
     "act": "BNS",
     "section": "105",
-    "title": "Culpable homicide not amounting to murder",
+    "title": "Culpable homicide not amounting to murder (ambiguous limb)",
+    "maxMonths": null,
+    "death": false,
+    "life": false,
+    "review": true,
+    "note": "Confirm the charge-sheet limb: intention can carry life; knowledge-only has a ten-year maximum. Internal aliases 105-I and 105-II are not numbered statutory subsections.",
+    "source": "https://www.ncrb.mha.gov.in/uploads/SankalanPortal/ChaptersBNS.html"
+  },
+  {
+    "act": "BNS",
+    "section": "105-I",
+    "title": "Culpable homicide not amounting to murder (limb I - intention)",
     "maxMonths": null,
     "death": false,
     "life": true,
     "review": false,
-    "note": "knowledge-only limb is max 10 years"
+    "note": "Limb I denotes intention; recorded here as an internal alias (not a numbered subsection).",
+    "source": "https://www.ncrb.mha.gov.in/uploads/SankalanPortal/ChaptersBNS.html"
+  },
+  {
+    "act": "BNS",
+    "section": "105-II",
+    "title": "Culpable homicide not amounting to murder (limb II - knowledge only)",
+    "maxMonths": 120,
+    "death": false,
+    "life": false,
+    "review": false,
+    "note": "Knowledge-only limb: maximum ten years. Internal alias, not a numbered statutory subsection; confirm the charge-sheet limb.",
+    "source": "https://www.ncrb.mha.gov.in/uploads/SankalanPortal/ChaptersBNS.html"
   },
   {
     "act": "BNS",
@@ -983,12 +1006,35 @@ export const statutes = [
   {
     "act": "IPC",
     "section": "304",
-    "title": "Culpable homicide not amounting to murder",
+    "title": "Culpable homicide not amounting to murder (confirm part)",
+    "maxMonths": null,
+    "death": false,
+    "life": false,
+    "review": true,
+    "note": "Confirm Part I or Part II from the charge sheet: Part I can carry life; Part II has a ten-year maximum.",
+    "source": "https://www.indiacode.nic.in/bitstream/123456789/15289/1/ipc_act.pdf"
+  },
+  {
+    "act": "IPC",
+    "section": "304-I",
+    "title": "Culpable homicide not amounting to murder (Part I)",
     "maxMonths": null,
     "death": false,
     "life": true,
     "review": false,
-    "note": "Part II max 10 years"
+    "note": "Intention limb; life imprisonment is specified.",
+    "source": "https://www.indiacode.nic.in/bitstream/123456789/15289/1/ipc_act.pdf"
+  },
+  {
+    "act": "IPC",
+    "section": "304-II",
+    "title": "Culpable homicide not amounting to murder (Part II)",
+    "maxMonths": 120,
+    "death": false,
+    "life": false,
+    "review": false,
+    "note": "Knowledge without the specified intention; maximum ten years. Confirm Part II from the charge sheet.",
+    "source": "https://www.indiacode.nic.in/bitstream/123456789/15289/1/ipc_act.pdf"
   },
   {
     "act": "IPC",

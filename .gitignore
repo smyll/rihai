@@ -1,8 +1,11 @@
 incoming/
 .local/
+.codenow/
 node_modules/
 *.log
 .env*
 docs/CONTROLLER_REPORT.md
 docs/BUILD_STATE.json
+docs/AF_REVIEW_PLAN_20261115.json
+docs/REVIEW_CLAUDE_20261115.md
 !data/sample-roster.csv

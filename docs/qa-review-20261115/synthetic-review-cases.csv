@@ -1,0 +1,7 @@
+prisoner_id,name,gender,age,prison,court,case_no,charges,custody_start,first_time,other_pending_cases,excluded_delay_days,notes
+QA-OUTER,Synthetic outer-limit case,female,30,Synthetic facility,Synthetic court,FICTIONAL-QA-OUTER,"BNS 115(2),127(2)",2025-01-10,no,0,0,Synthetic software regression fixture
+QA-COURT,Synthetic court-review case,female,30,Synthetic facility,Synthetic court,FICTIONAL-QA-COURT,"BNS 303(2),317(2)",2025-01-01,yes,0,0,Synthetic software regression fixture
+QA-PART-II,Synthetic knowledge-limb case,male,30,Synthetic facility,Synthetic court,FICTIONAL-QA-PART-II,IPC 304 Pt. II,2022-01-01,no,0,0,Synthetic software regression fixture
+QA-BARE,Synthetic ambiguous-limb case,male,30,Synthetic facility,Synthetic court,FICTIONAL-QA-BARE,IPC 304,2022-01-01,no,0,0,Synthetic software regression fixture
+QA-UNKNOWN,Synthetic unresolved outer case,female,30,Synthetic facility,Synthetic court,FICTIONAL-QA-UNKNOWN,"BNS 115(2),999",2025-01-10,no,0,0,Synthetic software regression fixture
+QA-PRE-BNS,Synthetic applicable-law case,female,30,Synthetic facility,Synthetic court,FICTIONAL-QA-PRE-BNS,BNS 303(2),2024-03-01,yes,0,0,Synthetic software regression fixture
